@@ -46,6 +46,14 @@ jobs:
           git remote add origin https://github.com/1DanToken/1DanGame.git
           git checkout -b gh-pages
 
+      - name: Ensure all files are added before commit
+        run: |
+          git add -f css js index.html .nojekyll
+
+      - name: Commit changes
+        run: |
+          git commit -m "New deployment"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
