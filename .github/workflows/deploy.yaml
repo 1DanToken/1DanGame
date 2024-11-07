@@ -52,7 +52,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git commit -m "New deployment"
+          git commit -c user.name="1DanToken" -c user.email="187533647+1DanToken@users.noreply.github.com" -m "New deployment"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
