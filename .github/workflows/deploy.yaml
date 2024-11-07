@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: List `dist` contents for verification
-        run: ls -la dist
+        run: ls -laR dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
