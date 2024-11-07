@@ -42,6 +42,7 @@ jobs:
       - name: Reinitialize Git
         run: |
           git init
+          git remote remove origin || true
           git remote add origin https://github.com/1DanToken/1DanGame.git
           git checkout -b gh-pages
 
