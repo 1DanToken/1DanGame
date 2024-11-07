@@ -36,8 +36,12 @@ jobs:
           BE_API_KEY: ${{ secrets.BE_API_KEY }}
         run: npm run build
 
+      - name: List `dist` contents for verification
+        run: ls -la dist
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          enable_jekyll: false
