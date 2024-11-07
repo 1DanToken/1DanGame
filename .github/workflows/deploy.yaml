@@ -54,6 +54,4 @@ jobs:
       - name: Commit changes
         run: |
           git -c user.name="1DanToken" -c user.email="187533647+1DanToken@users.noreply.github.com" commit -m "New deployment"
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            git push origin --force gh-pages
+          git push origin --force gh-pages
