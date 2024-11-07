@@ -1,0 +1,61 @@
+/* Global view styling */
+body, #app {
+  background-color: #1e1e1e; /* Dark background for the entire app */
+  color: #f5f5dc; /* Cream-colored font for all text */
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif; /* Set Times font for the entire app */
+}
+
+/* Header styling */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center; /* Center the h1 element */
+  color: #f5f5dc; /* Cream color for h1 */
+  margin-top: 20px; /* Add some top space */
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 20px; /* Add initial space to the left of h2 */
+  font-size: 20px;
+  color: #dcdcdc; /* Light grey color for h2 */
+}
+
+/* Button styling */
+button {
+  background-color: #333333; /* Dark grey background for buttons */
+  color: #f5f5dc; /* Cream-colored text for button labels */
+  font-weight: bold; /* Bold text in all buttons */
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px; /* Rounded corners for all buttons */
+  padding: 10px 15px;
+  margin-left: 20px; /* Add initial space to the left-most button */
+  transition: background-color 0.3s;
+  font-family: "Times New Roman", Times, serif;
+}
+
+button:hover {
+  background-color: #555555; /* Slightly lighter grey on hover for better contrast */
+}
+
+/* Collectibles specific styles */
+.collectible {
+  padding: 10px;
+  border-bottom: 1px solid #444; /* Dark grey divider between items */
+  color: #f5f5dc; /* Cream-colored text for collectible items */
+}
+
+#commands {
+  margin: 15px 0;
+}
+
+.feedback {
+  color: #ff8080; /* Soft red for feedback text */
+  margin-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+  

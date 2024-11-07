@@ -1,0 +1,25 @@
+{
+    "name": "fe",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "clean": "rimraf dist && rimraf node_modules/.cache"
+    },
+    "dependencies": {
+        "@vue/cli-service": "^4.5.0",
+        "@waxio/waxjs": "^1.2.6",
+        "dotenv": "^16.4.5",
+        "eosjs": "^20.0.0",
+        "markdown-it": "^14.1.0",
+        "text-encoding": "^0.7.0",
+        "ual-anchor": "^1.3.0",
+        "vue": "^3.0.0"
+    },
+    "devDependencies": {
+        "gh-pages": "^6.2.0",
+        "raw-loader": "^4.0.2",
+        "rimraf": "^6.0.1"
+    }
+}
