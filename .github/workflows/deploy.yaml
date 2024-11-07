@@ -48,7 +48,7 @@ jobs:
 
       - name: Ensure all files are added before commit
         run: |
-          git add -f css js index.html .nojekyll
+          git add -f dist/css dist/js dist/index.html dist/.nojekyll
 
       - name: Commit changes
         run: |
