@@ -48,16 +48,12 @@ jobs:
 
       - name: Ensure all files are added before commit
         run: |
-          git add -f dist/css dist/js dist/index.html
+          touch dist/.nojekyll
+          git add -f dist/css dist/js dist/index.html dist/.nojekyll
 
       - name: Commit changes
         run: |
           git -c user.name="1DanToken" -c user.email="187533647+1DanToken@users.noreply.github.com" commit -m "New deployment"
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          force_orphan: true
-          enable_jekyll: false
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            git push origin --force gh-pages
