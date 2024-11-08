@@ -5,7 +5,9 @@
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "clean": "rimraf dist && rimraf node_modules/.cache"
+        "clean": "rimraf dist && rimraf node_modules/.cache",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@vue/cli-service": "^4.5.0",

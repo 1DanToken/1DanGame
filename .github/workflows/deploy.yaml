@@ -28,30 +28,12 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm audit fix --force
 
-      - name: Build project
+      - name: Build and Deploy 
         env:
           VUE_APP_API_URL: ${{ secrets.VUE_APP_API_URL }}
           BE_API_KEY: ${{ secrets.BE_API_KEY }}
-        run: npm run build
-
-      - name: List `dist` contents for verification
-        run: ls -laR dist
-
-      - name: Reinitialize Git
-        run: |
-          git init
-          git remote remove origin || true
-          git remote add origin https://github.com/1DanToken/1DanGame.git
-          git checkout -b gh-pages
-
-      - name: Ensure all files are added before commit
-        run: |
-          touch dist/.nojekyll
-          git add -f dist/css dist/js dist/index.html dist/.nojekyll
-
-      - name: Commit changes
-        run: |
-          git -c user.name="1DanToken" -c user.email="187533647+1DanToken@users.noreply.github.com" commit -m "New deployment"
-          git push origin --force gh-pages
+        run: npm run deploy
