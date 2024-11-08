@@ -6,6 +6,9 @@ dist/
 build/
 coverage/
 
+# Allow the dist when explicitly staged
+!dist/*
+
 # Logs
 npm-debug.log*
 yarn-debug.log*

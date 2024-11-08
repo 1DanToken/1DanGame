@@ -40,4 +40,6 @@ jobs:
         run: |
           git config user.email "187533647+1DanToken@users.noreply.github.com"
           git config user.name "1DanToken"
+          npm run build
+          git add -f dist/
           npm run deploy
