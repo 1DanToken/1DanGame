@@ -42,4 +42,5 @@ jobs:
           git config user.name "1DanToken"
           npm run build
           git add -f dist/
-          npm run deploy
+          git commit -m 'adding dist subtree'
+          git subtree push --prefix dist origin gh-pages

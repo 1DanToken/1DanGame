@@ -2,12 +2,12 @@
 node_modules/
  
 # Build Outputs
-dist/
+#dist/
 build/
 coverage/
 
 # Allow the dist when explicitly staged
-!dist/*
+#!dist/*
 
 # Logs
 npm-debug.log*
