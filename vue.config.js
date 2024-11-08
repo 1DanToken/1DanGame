@@ -2,6 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ? '/1DanGame/' : '/',
+  filenameHashing: true,
   configureWebpack: {
     devtool: 'source-map',
     plugins: [
