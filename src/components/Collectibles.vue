@@ -237,7 +237,7 @@ export default {
           }
         } catch (error) {
           console.error("Error adding collectible:", error);
-          this.feedback = `Error adding collectible: ${error.message}`
+          this.feedback = `Error adding collectible with temlate id '${templateId}': ${error.message}`
       }
     },
 
