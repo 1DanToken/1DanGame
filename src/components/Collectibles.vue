@@ -229,12 +229,11 @@ export default {
           });
           if (this.viewing) {
             this.$emit("fetch-users");
-            this.$emit("fetch-viewing-user-details", this.userAddress);
-            this.fetchCollectibles();
+            this.$emit("fetch-viewing-user-details", this.userAddress); 
           } else {
             this.$emit("fetch-user-details", this.userAddress);
-            this.fetchCollectibles();
           }
+          this.fetchCollectibles();
         } catch (error) {
           console.error("Error adding collectible:", error);
           this.feedback = `Error adding collectible with temlate id '${templateId}': ${error.message}`
