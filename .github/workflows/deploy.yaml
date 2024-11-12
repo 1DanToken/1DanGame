@@ -41,6 +41,7 @@ jobs:
           git config user.email "187533647+1DanToken@users.noreply.github.com"
           git config user.name "1DanToken"
           npm run build
+          touch dist/.nojekyll
           git add -f dist/
           git commit -m 'adding dist subtree'
           git subtree push --prefix dist origin gh-pages
