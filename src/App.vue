@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1 id="title">1Dan Nightmares Game</h1>
-    <div id="version" class="version">Version 1.1.0</div>
+    <div id="version" class="version">Version 1.1.1</div>
     <Login 
       ref="login" 
       v-show="!isLoggedIn" 
