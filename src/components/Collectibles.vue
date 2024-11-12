@@ -296,10 +296,10 @@ export default {
           if (this.viewing) {
             this.$emit("fetch-users");
             this.$emit("fetch-viewing-user-details", this.userAddress);
-            this.fetchCollectibles();
           } else {
             this.$emit("fetch-user-details", this.userAddress);
           }
+          this.fetchCollectibles();
           this.feedback = "";
         } else {
           throw new Error("Failed to remove collectible.");
