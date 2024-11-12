@@ -14,7 +14,7 @@ const config = {
       ],
     },
     apiUrl: process.env.VUE_APP_API_URL || "http://localhost:8000",
-    apiKey: process.env.BE_API_KEY || "bla bla bla",
+    apiKey: process.env.BE_API_KEY || "Default API connection Secret of secrets ... that is",
     dummyVar: process.env.BE_BB || "bla bla bla",
   };
   
